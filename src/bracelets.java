@@ -1,4 +1,3 @@
-package Solucionados;
 //funcionaaaaa :D
 import java.io.BufferedReader;
 import java.io.IOException;

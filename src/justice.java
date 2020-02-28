@@ -1,4 +1,3 @@
-package Solucionados;
 //ya funciona
 import java.util.*;
 
