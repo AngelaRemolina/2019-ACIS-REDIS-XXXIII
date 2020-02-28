@@ -1,3 +1,5 @@
+package Solucionados;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -14,8 +16,8 @@ public class kitchen {
         while(!(m=br.readLine()).equals("")) {
             int cont=1;
             List<Integer> res = new ArrayList<>();
-            List<Integer> dX=new ArrayList<>();
-            List<Integer> dY=new ArrayList<>();
+            List<Integer> dX=new ArrayList<>(); //divididos en 10
+            List<Integer> dY=new ArrayList<>(); //modulos de 10
 
             int n=Integer.parseInt(m);
 
@@ -50,11 +52,9 @@ public class kitchen {
             }
             answer.add(cont);
 
-
-
         }
-        for(int answe : answer) {
-            System.out.println(answe);
+        for(int rta : answer) {
+            System.out.println(rta);
         }
 
     }
