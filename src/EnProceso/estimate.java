@@ -22,7 +22,7 @@ public class estimate {
              */
             int cont=0;
             for (int i = 0; i < len ; i++) {
-                int num = Integer.parseInt(evaluatingNums[i]);
+                long num = Long.parseLong(evaluatingNums[i]);
                 List<Integer> divisores = new ArrayList<>();
                 for (int j = 1; j < Math.ceil(Math.sqrt(num))+1 ; j++) {
                     if(num%j == 0) {
@@ -31,19 +31,19 @@ public class estimate {
                 }
                 if (divisores.size()>=3){
                     for (int j = 1; j < divisores.size(); j++) {
-                        int pq = divisores.get(j-1)*divisores.get(j);
-                        if(num%(pq)==0){
-                            int r=num/pq;
 
+                        int p = divisores.get(j-1);
+                        int q = divisores.get(j);
+                        if(num%(p*q)==0){
+                            long r=num/(p*q);
+                            if(((p*-q*-r)/((p*-r)+(-q*-r)+(p*-q)))==num){
+                                cont++;
+                            }
                         }
-
-
                     }
                 }
             }
-
             double per = (cont*1.0/len)*100.0;
-
             System.out.println((int)per);
         }
     }
