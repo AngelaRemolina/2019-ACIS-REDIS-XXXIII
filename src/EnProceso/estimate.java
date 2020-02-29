@@ -20,6 +20,31 @@ public class estimate {
             recordar que un caso es un caso posible si para cada numero n en evaluatingNums se encuentran
             numeros p, q, r que cumplan la ecuación de Alex
              */
+            int cont=0;
+            for (int i = 0; i < len ; i++) {
+                int num = Integer.parseInt(evaluatingNums[i]);
+                List<Integer> divisores = new ArrayList<>();
+                for (int j = 1; j < Math.ceil(Math.sqrt(num))+1 ; j++) {
+                    if(num%j == 0) {
+                        divisores.add(j);
+                    }
+                }
+                if (divisores.size()>=3){
+                    for (int j = 1; j < divisores.size(); j++) {
+                        int pq = divisores.get(j-1)*divisores.get(j);
+                        if(num%(pq)==0){
+                            int r=num/pq;
+
+                        }
+
+
+                    }
+                }
+            }
+
+            double per = (cont*1.0/len)*100.0;
+
+            System.out.println((int)per);
         }
     }
 }
