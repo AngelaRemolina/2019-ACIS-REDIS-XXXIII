@@ -17,11 +17,11 @@ public class dazzle {
                 String[] coordenadas = br.readLine().split("  ");
             }
             for (int i = 0; i <q ; i++) {
-                String[] coordenadas = br.readLine().split("  ");
+                String[] sr = br.readLine().split("  ");
             }
         }
 
         //Solo hay lectura hasta acá
-        
+
     }
 }
