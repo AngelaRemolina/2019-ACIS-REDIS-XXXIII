@@ -30,7 +30,7 @@ public class fibcod {
                 double num = (Math.pow(1.618034,(suma.length()+1)-i))-(Math.pow(-0.618034,(suma.length()+1)-i));
                 double fib = num/den;
                 sumaA = sumaA + (fib*Character.getNumericValue(suma.charAt(i)));
-                //revisar el ultimo input ¿por que da cero?
+                //El ultimo input da cero porque
             }
             System.out.println(Math.round(sumaA)%524288);
         }
