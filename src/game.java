@@ -1,5 +1,3 @@
-package EnProceso;
-
 import java.util.Scanner;
 
 public class game {
